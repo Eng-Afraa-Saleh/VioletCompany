@@ -1,0 +1,71 @@
+{
+  "footer": {
+    "company_info": {
+      "title": "FutureTech Solutions",
+      "description": "Leaders in smart business solutions and digital design, building a promising technological future together.",
+      "address": "Floor 10, Digital Business Tower, Dubai, UAE",
+      "email": "info@futuretech.sa",
+      "phone": "+971 4 123 4567"
+    },
+    "quick_links": {
+      "title": "Quick Links",
+      "links": [
+        { "title": "Home", "url": "/" },
+        { "title": "About Us", "url": "/about" },
+        { "title": "Services", "url": "/services" },
+        { "title": "Contact Us", "url": "/contact" }
+      ]
+    },
+    "services": {
+      "title": "Our Services",
+      "links": [
+        { "title": "Ufuq ERP System", "url": "/services/erp" },
+        { "title": "App Development", "url": "/services/apps" },
+        { "title": "Web Design", "url": "/services/web" },
+        { "title": "Technical Consulting", "url": "/services/consulting" },
+        { "title": "Digital Marketing", "url": "/services/marketing" }
+      ]
+    },
+    "contact": {
+      "title": "Our Offices",
+      "offices": [
+        {
+          "country": "Saudi Arabia",
+          "phones": ["+966 11 234 5678", "+966 50 987 6543"],
+          "address": "Riyadh, Al Olaya"
+        },
+        {
+          "country": "United Arab Emirates",
+          "phones": ["+971 4 123 4567", "+971 50 433 9421"],
+          "address": "Dubai Marina, Dubai"
+        },
+        {
+          "country": "Egypt",
+          "phones": ["+20 2 3456 7890"],
+          "address": "Cairo, Fifth Settlement"
+        }
+      ]
+    },
+    "copyright": "© 2024 FutureTech Solutions. All rights reserved.",
+    "social": {
+      "title": "Follow Us",
+      "links": [
+        {
+          "name": "LinkedIn",
+          "icon": "FaLinkedin",
+          "url": "https://www.linkedin.com/company/futuretech-solutions"
+        },
+        {
+          "name": "Twitter (X)",
+          "icon": "FaTwitter",
+          "url": "https://twitter.com/FutureTechHQ"
+        },
+        {
+          "name": "Instagram",
+          "icon": "FaInstagram",
+          "url": "https://www.instagram.com/futuretech.vision"
+        }
+      ]
+    }
+  }
+}

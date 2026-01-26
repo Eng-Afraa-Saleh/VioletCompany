@@ -1,0 +1,49 @@
+{
+  "about": {
+    "title": "About Us",
+    "subtitle": "FutureTech Solutions",
+    "description": "We are a leading provider of smart business solutions and digital transformation. We empower companies of all sizes through advanced tools that simplify financial management, improve operations, and drive growth. We also offer innovative digital design and development services to build a strong and effective brand presence in the digital age.",
+    "company_info": "FutureTech Solutions is your strategic partner towards digital excellence. We combine deep expertise in Enterprise Resource Planning (ERP) solutions with limitless creativity in digital design. We don't just offer tools; we create integrated experiences that enhance your operational efficiency and strengthen your market identity.",
+    "features": {
+      "erp": {
+        "title": "Ufuq ERP System",
+        "description": "A unified smart platform for managing finance, inventory, human resources, and customer relations with accuracy and ease"
+      },
+      "design": {
+        "title": "Premium Digital Solutions",
+        "description": "Design and development of websites and applications that meet the highest standards of quality and user experience"
+      },
+      "solutions": {
+        "title": "Digital Transformation Consulting",
+        "description": "Customized business models and strategies to help your company compete and thrive in the digital economy"
+      }
+    }
+  },
+
+  "common": {
+    "history": {
+      "title": "Innovation Journey",
+      "subtitle": "Towards the Future Since 2015",
+      "events": [
+        {
+          "place": "Founding of FutureTech Solutions",
+          "tenure": "2015",
+          "role": "The Birth of a Digital Empowerment Vision",
+          "detail": "Our journey began in 2015, initiated by Mr. Ali Hussein, who envisioned bridging the gap between technology and business. The goal was to create a company that delivers practical solutions driving digital transformation in the region."
+        },
+        {
+          "place": "Launch of the Comprehensive Platform",
+          "tenure": "2021",
+          "role": "Growth and Expansion Leap",
+          "detail": "At the start of the third decade, we launched our flagship platform 'Ufuq ERP', marking a qualitative shift in our services. This launch enhanced our capacity to handle larger projects and strengthened our market presence."
+        },
+        {
+          "place": "Reaching New Markets",
+          "tenure": "2023 - Present",
+          "role": "Globalizing Our Services",
+          "detail": "Today, we are proud to have expanded our operations to include partners and clients in over 15 countries worldwide, including Gulf states, Egypt, Jordan, with ambitious plans to reach European and Asian markets."
+        }
+      ]
+    }
+  }
+}

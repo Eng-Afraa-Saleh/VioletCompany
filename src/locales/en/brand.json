@@ -1,0 +1,52 @@
+{
+  "brand": {
+    "title": "Ufuq ERP System",
+    "subtitle": "The Heart of Your Smart Operations",
+    "sections": [
+      {
+        "content": "The Ufuq ERP System is the management brain of your organization. Designed to suit various sectors and sizes, it provides an integrated environment to manage all aspects of business: from finance and procurement to sales and human resources. The system helps you see the big picture and make faster, more informed decisions.",
+        "image": "./public/assets/images/Brand/System_Core.png",
+        "des": "The system features a modern, fully customizable interface with interactive dashboards that deliver vital reports and real-time analytics. Ufuq is not just software; it's a growth partner that evolves with your business."
+      }
+    ],
+    "features": [
+      "Centralized Accounting & Finance",
+      "Supply Chain & Inventory Management",
+      "Employee Affairs & Attendance",
+      "Sales & Customer Relationship Management",
+      "Smart Analytical Dashboards & Reporting"
+    ],
+    "qa_section": {
+      "title": "Uncompromising Quality",
+      "subtitle": "Rigorously Tested, Delivered Perfect",
+      "content": "At FutureTech Solutions, excellence begins in the Quality Assurance department. We follow a rigorous testing methodology covering all development stages. Our specialized team examines every line of code, every function, and every user experience to ensure the product is defect-free and performs optimally under various conditions. We use a combination of advanced automated testing and meticulous manual inspection, with a strong focus on security and stability.",
+      "image": "./public/assets/images/Services/Quality_Assurance.png"
+    },
+    "qa_features": [
+      "Integration & Unit Testing",
+      "User Experience (UX) Review",
+      "Load & Performance Testing",
+      "Comprehensive Security Audit",
+      "Cross-Platform Compatibility Testing"
+    ]
+  },
+  "brandslider": {
+    "cards": [
+      {
+        "image": "./assets/images/Brand/dashboard_en.png"
+      },
+      {
+        "image": "./assets/images/Brand/finance_en.png"
+      },
+      {
+        "image": "./assets/images/Brand/hr_en.png"
+      },
+      {
+        "image": "./assets/images/Brand/crm_en.png"
+      },
+      {
+        "image": "./assets/images/Brand/inventory_en.png"
+      }
+    ]
+  }
+}

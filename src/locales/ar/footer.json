@@ -1,0 +1,71 @@
+{
+  "footer": {
+    "company_info": {
+      "title": "تقنيات المستقبل",
+      "description": "رائدون في حلول الأعمال الذكية والتصميم الرقمي، نبني معًا مستقبلاً تقنياً واعدًا.",
+      "address": "الطابق 10، برج الأعمال الرقمي، دبي، الإمارات العربية المتحدة",
+      "email": "info@futuretech.sa",
+      "phone": "+971 4 123 4567"
+    },
+    "quick_links": {
+      "title": "روابط سريعة",
+      "links": [
+        { "title": "الرئيسية", "url": "/" },
+        { "title": "من نحن", "url": "/about" },
+        { "title": "الخدمات", "url": "/services" },
+        { "title": "اتصل بنا", "url": "/contact" }
+      ]
+    },
+    "services": {
+      "title": "خدماتنا",
+      "links": [
+        { "title": "نظام أفق ERP", "url": "/services/erp" },
+        { "title": "تطوير التطبيقات", "url": "/services/apps" },
+        { "title": "تصميم الويب", "url": "/services/web" },
+        { "title": "الاستشارات التقنية", "url": "/services/consulting" },
+        { "title": "التسويق الرقمي", "url": "/services/marketing" }
+      ]
+    },
+    "contact": {
+      "title": "مكاتبنا",
+      "offices": [
+        {
+          "country": "المملكة العربية السعودية",
+          "phones": ["+966 11 234 5678", "+966 50 987 6543"],
+          "address": "الرياض، العليا"
+        },
+        {
+          "country": "الإمارات العربية المتحدة",
+          "phones": ["+971 4 123 4567", "+971 50 433 9421"],
+          "address": "دبي، دبي مارينا"
+        },
+        {
+          "country": "مصر",
+          "phones": ["+20 2 3456 7890"],
+          "address": "القاهرة، التجمع الخامس"
+        }
+      ]
+    },
+    "copyright": "© ٢٠٢٤ تقنيات المستقبل. جميع الحقوق محفوظة.",
+    "social": {
+      "title": "تابعنا",
+      "links": [
+        {
+          "name": "لينكد إن",
+          "icon": "FaLinkedin",
+          "url": "https://www.linkedin.com/company/futuretech-solutions"
+        },
+        {
+          "name": "تويتر (X)",
+          "icon": "FaTwitter",
+          "url": "https://twitter.com/FutureTechHQ"
+        },
+        {
+          "name": "انستغرام",
+          "icon": "FaInstagram",
+          "url": "https://www.instagram.com/futuretech.vision"
+        }
+      ]
+    }
+  }
+}

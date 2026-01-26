@@ -1,0 +1,39 @@
+{
+  "navbar": {
+    "slogan": "Your Partner Towards Successful Digital Transformation",
+    "language": "Language"
+  },
+  "language_switcher": {
+    "en": "English",
+    "ar": "Arabic"
+  },
+
+  "navbarmain": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "brand": "Brand",
+    "certification": "Certification",
+    "contact": "Contact Us"
+  },
+
+  "hero": {
+    "title": "Turn Your Digital Challenges into Growth Opportunities",
+    "description": "We design and implement integrated technological and consulting solutions that help your organization innovate and compete in today's economy.",
+    "contact_btn": "Start Your Journey",
+    "stats": {
+      "clients": {
+        "value": "400+",
+        "label": "Successful Partners"
+      },
+      "projects": {
+        "value": "850+",
+        "label": "Solutions Delivered"
+      },
+      "experience": {
+        "value": "9+",
+        "label": "Years of Achievement"
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "services": {
+    "title": "Our Expertise",
+    "subtitle": "Solutions Tailored to Your Ambitions",
+    "cards": [
+      {
+        "image": "./assets/images/Services/digital_transformation.png",
+        "title": "Comprehensive Digital Transformation",
+        "description": "We assist your organization in its digital journey from planning to execution, using the latest technologies and workflow strategies to boost productivity and profitability."
+      },
+      {
+        "image": "./assets/images/Services/erp_cloud.png",
+        "title": "Enterprise Management Systems (ERP)",
+        "description": "The 'Ufuq' system is your integrated, cloud-based solution to manage all your company's departments in one place, with high accuracy and easy data accessibility."
+      },
+      {
+        "image": "./assets/images/Services/uiux_design.png",
+        "title": "Digital Design & Development",
+        "description": "We create engaging user experiences and modern interfaces for websites and applications that reflect your brand identity and meet your audience's expectations in the digital age."
+      }
+    ]
+  }
+}
