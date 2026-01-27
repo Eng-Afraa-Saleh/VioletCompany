@@ -13,8 +13,7 @@ import {
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import type { JSX } from 'react';
-import { CiFacebook } from 'react-icons/ci';
-
+ 
 interface FooterLink {
   title: string;
   url: string;
