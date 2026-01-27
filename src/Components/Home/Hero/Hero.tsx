@@ -37,7 +37,7 @@ export const Hero = () => {
   };
 
   return (
-    <section className="relative overflow-hidden py-8  px-4 bg-gradient-to-br from-light-background via-light-background to-light-primary/10 dark:from-dark-background  dark:via-dark-background dark:to-dark-primary">
+    <section className="relative overflow-hidden py-8  px-4 bg-gradient-to-br from-light-background via-light-background to-light-primary/10 dark:from-dark-background  dark:via-dark-background dark:to-dark-card">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-0 w-full h-full bg-[url('./assets/images/patterns/grid.svg')] opacity-10 dark:opacity-5"></div>
         <div className="absolute top-1/2 left-1/2 w-[600px] h-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-light-primary/5 dark:bg-dark-primary/5 blur-3xl"></div>
@@ -51,7 +51,7 @@ export const Hero = () => {
           variants={containerVariants}
         >
           <motion.h1 
-            className={`text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight font-primary
+            className={`text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight font-primary
               bg-gradient-to-r from-light-primary via-light-accent to-light-highlight 
               dark:from-dark-primary dark:via-dark-accent dark:to-dark-highlight
               bg-clip-text text-transparent animated-gradient-text ${isRTL ? 'text-right pb-16' : 'text-left'}`}
@@ -60,8 +60,7 @@ export const Hero = () => {
             {t('hero.title')}
           </motion.h1>
 
-          {/* الوصف */}
-          <motion.p 
+           <motion.p 
             className={`text-lg md:text-xl text-light-text/80 dark:text-dark-text/80 mb-8 leading-relaxed ${isRTL ? 'text-right' : 'text-left'}`}
             variants={fadeIn}
           >

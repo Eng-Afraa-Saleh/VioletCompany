@@ -4,7 +4,7 @@ import { FiChevronDown, FiCheck } from 'react-icons/fi';
 import { motion } from 'framer-motion';
 
 const LanguageSwitcher = () => {
-  const { t, i18n } = useTranslation('common');
+  const {  i18n } = useTranslation('common');
   const [isOpen, setIsOpen] = useState(false);
 
   const languages = [

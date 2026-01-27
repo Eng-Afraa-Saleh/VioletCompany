@@ -13,7 +13,7 @@ export const AboutSection = () => {
   };
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-t from-light-background via-light-background to-light-primary dark:from-dark-background dark:via-dark-background dark:to-dark-primary" id="about">
+    <section className="py-20 px-4 bg-light-background dark:bg-dark-background" id="about">
       <div className="container mx-auto">
         <motion.div
           initial="hidden"
@@ -43,7 +43,7 @@ export const AboutSection = () => {
             className="lg:w-1/2"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false }} // تغيير once إلى false
+            viewport={{ once: false }}  
             variants={{
               hidden: { opacity: 0, x: isRTL ? 50 : -50 },
               visible: { opacity: 1, x: 0, transition: { duration: 0.8 } }

@@ -3,6 +3,10 @@ import { useTranslation } from 'react-i18next';
 import { motion, type Variants } from 'framer-motion';
 import { FiArrowRight, FiArrowLeft } from 'react-icons/fi';
 
+ import services2 from '/assets/images/Services/services1.png';
+import services1 from '/assets/images/Services/services2.png';
+import services3 from '/assets/images/Services/services3.png';
+
 interface ServiceCard {
   title: string;
   description: string;
@@ -21,6 +25,13 @@ const ServicesCards = () => {
   };
 
   const services: ServiceCard[] = t('services.cards', { returnObjects: true }) as ServiceCard[];
+
+   const serviceImages = [services1, services2, services3];
+  
+   const servicesWithImages = services.map((service, index) => ({
+    ...service,
+    image: serviceImages[index]
+  }));
 
   const cardVariants: Variants = {
     offscreen: {
@@ -66,7 +77,7 @@ const ServicesCards = () => {
   };
 
   return (
-    <section className="py-20 px-4 from-light-background via-light-background to-light-primary/10 dark:from-dark-background dark:via-dark-background/90 dark:to-dark-primary/10">
+    <section className="py-20 px-4 from-light-background via-light-background to-light-primary/10 dark:bg-dark-card">
       <div className="container mx-auto">
 
         <motion.div
@@ -93,7 +104,7 @@ const ServicesCards = () => {
         </motion.div>
 
          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
+          {servicesWithImages.map((service, index) => (
             <motion.div 
               key={index}
               className="relative h-64 perspective-1000"
