@@ -2,6 +2,13 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
+// استيراد الصور مباشرة
+import form1 from '/assets/images/Brand/form1.png';
+import form2 from '/assets/images/Brand/form2.png';
+import form3 from '/assets/images/Brand/form3.png';
+import form4 from '/assets/images/Brand/form4.png';
+import form5 from '/assets/images/Brand/form5.png';
+
 interface SlideData {
   image: string;
   [key: string]: any; 
@@ -12,18 +19,29 @@ const BrandSlider = () => {
   const [direction, setDirection] = useState(1);
   const { t, i18n } = useTranslation('brand');
   const isRTL = i18n.language === 'ar';
+
+  // مصفوفة الصور المستوردة
+  const importedImages = [form1, form2, form3, form4, form5];
+  
+  // الحصول على بيانات السلايدر من الترجمة
   const brandData = t('brandslider.cards', { returnObjects: true }) as SlideData[];
+  
+  // دمج الصور المستوردة مع البيانات
+  const slidesWithImages = brandData.map((slide, index) => ({
+    ...slide,
+    image: importedImages[index] || slide.image
+  }));
 
   useEffect(() => {
-    if (brandData.length === 0) return;
+    if (slidesWithImages.length === 0) return;
 
     const interval = setInterval(() => {
       setDirection(1);
-      setCurrentSlide((prev) => (prev + 1) % brandData.length);
+      setCurrentSlide((prev) => (prev + 1) % slidesWithImages.length);
     }, 5000);
     
     return () => clearInterval(interval);
-  }, [brandData.length]);
+  }, [slidesWithImages.length]);
 
   const goToSlide = (index: number) => {
     if (index === currentSlide) return;
@@ -48,7 +66,7 @@ const BrandSlider = () => {
     })
   };
 
-  if (!brandData || brandData.length === 0) {
+  if (!slidesWithImages || slidesWithImages.length === 0) {
     return <div className="w-full h-64 md:h-96 bg-gray-200 rounded-2xl"></div>;
   }
 
@@ -69,7 +87,7 @@ const BrandSlider = () => {
           className="absolute inset-0"
         >
           <img
-            src={brandData[currentSlide].image}
+            src={slidesWithImages[currentSlide].image}
             alt={`Brand slide ${currentSlide + 1}`}
             className="w-full h-full object-cover object-center"
             loading="lazy"
@@ -78,9 +96,9 @@ const BrandSlider = () => {
         </motion.div>
       </AnimatePresence>
 
-      {brandData.length > 1 && (
+      {slidesWithImages.length > 1 && (
         <div className={`absolute bottom-6 ${isRTL ? 'right-6' : 'left-6'} flex gap-2 z-20`}>
-          {brandData.map((_, index) => (
+          {slidesWithImages.map((_, index) => (
             <button
               key={index}
               onClick={() => goToSlide(index)}
@@ -95,12 +113,12 @@ const BrandSlider = () => {
         </div>
       )}
 
-      {brandData.length > 1 && (
+      {slidesWithImages.length > 1 && (
         <>
           <button
             onClick={() => {
               setDirection(-1);
-              setCurrentSlide((prev) => (prev - 1 + brandData.length) % brandData.length);
+              setCurrentSlide((prev) => (prev - 1 + slidesWithImages.length) % slidesWithImages.length);
             }}
             className={`absolute top-1/2 ${isRTL ? 'right-4' : 'left-4'} z-20 p-2 rounded-full bg-black/30 hover:bg-black/50 transition-colors`}
             aria-label="Previous slide"
@@ -123,7 +141,7 @@ const BrandSlider = () => {
           <button
             onClick={() => {
               setDirection(1);
-              setCurrentSlide((prev) => (prev + 1) % brandData.length);
+              setCurrentSlide((prev) => (prev + 1) % slidesWithImages.length);
             }}
             className={`absolute top-1/2 ${isRTL ? 'left-4' : 'right-4'} z-20 p-2 rounded-full bg-black/30 hover:bg-black/50 transition-colors`}
             aria-label="Next slide"

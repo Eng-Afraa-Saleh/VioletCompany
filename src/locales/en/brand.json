@@ -5,7 +5,7 @@
     "sections": [
       {
         "content": "The Ufuq ERP System is the management brain of your organization. Designed to suit various sectors and sizes, it provides an integrated environment to manage all aspects of business: from finance and procurement to sales and human resources. The system helps you see the big picture and make faster, more informed decisions.",
-        "image": "./public/assets/images/Brand/System_Core.png",
+        "image": "/assets/images/Brand/brandLogo.png",
         "des": "The system features a modern, fully customizable interface with interactive dashboards that deliver vital reports and real-time analytics. Ufuq is not just software; it's a growth partner that evolves with your business."
       }
     ],
@@ -33,19 +33,19 @@
   "brandslider": {
     "cards": [
       {
-        "image": "./assets/images/Brand/dashboard_en.png"
+        "image": "/assets/images/Brand/form1.png"
       },
       {
-        "image": "./assets/images/Brand/finance_en.png"
+        "image": "/assets/images/Brand/form2.png"
       },
       {
-        "image": "./assets/images/Brand/hr_en.png"
+        "image": "/assets/images/Brand/form3.png"
       },
       {
-        "image": "./assets/images/Brand/crm_en.png"
+        "image": "/assets/images/Brand/form4.png"
       },
       {
-        "image": "./assets/images/Brand/inventory_en.png"
+        "image": "/assets/images/Brand/form5.png"
       }
     ]
   }
