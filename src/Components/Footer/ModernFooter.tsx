@@ -1,16 +1,19 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { 
-  FaFacebook,
+   
   FaInstagram,
   FaPhone,
   FaEnvelope,
   FaMapMarkerAlt,
-  FaGlobe
+  FaGlobe,
+  FaTwitter,
+  FaFacebook
 } from 'react-icons/fa';
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import type { JSX } from 'react';
+import { CiFacebook } from 'react-icons/ci';
 
 interface FooterLink {
   title: string;
@@ -80,6 +83,7 @@ const ModernFooter = () => {
   const socialIcons: Record<string, JSX.Element> = {
     FaFacebook: <FaFacebook />,
     FaInstagram: <FaInstagram />,
+    FaTwitter: <FaTwitter />
   };
 
   const fadeIn = {
@@ -113,23 +117,23 @@ const ModernFooter = () => {
               <div className="flex items-start gap-3">
                 <FaGlobe className={`mt-1 ${darkMode ? 'text-dark-primary' : 'text-light-primary'}`} />
                 <a 
-                  href="http://www.palmyrasystem.com" 
+                  href="http://www.violetsystem.com" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className={`${darkMode ? 'text-dark-text/80 hover:text-dark-primary' : 'text-light-text/80 hover:text-light-primary'} transition-colors flex items-center gap-2`}
                 >
                   <span className="w-2 h-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 animate-pulse"></span>
-                  WWW.palmyrasystem.com
+                  WWW.violetsystem.com
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <FaEnvelope className={`${darkMode ? 'text-dark-primary' : 'text-light-primary'}`} />
                 <a 
-                  href="mailto:Info@updatecompany.net" 
+                  href="mailto:Info@violetcompany.net" 
                   className={`${darkMode ? 'text-dark-text/80 hover:text-dark-primary' : 'text-light-text/80 hover:text-light-primary'} transition-colors flex items-center gap-2`}
                 >
                   <span className="w-2 h-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 animate-pulse"></span>
-                  Info@updatecompany.net
+                  Info@violetcompany.net
                 </a>
               </div>
             </div>

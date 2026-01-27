@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { FiCheck, FiShield, FiCode, FiMonitor, FiBarChart2 } from 'react-icons/fi';
-
+import Qua from '/assets/images/Services/Qua.png'
 interface QASectionData {
   title: string;
   subtitle: string;
@@ -89,7 +89,7 @@ const QualityAssurance = () => {
           >
             <div className="relative flex items-center justify-center rounded-3xl overflow-hidden shadow-2xl">
               <img
-                src={qaData.image}
+                src={Qua}
                 alt="Quality Assurance"
                 className="w-full h-auto object-cover"
                 loading="lazy"

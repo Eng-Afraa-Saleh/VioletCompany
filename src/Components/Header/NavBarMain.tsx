@@ -77,7 +77,7 @@ export const NavBarMain = () => {
                   onHoverEnd={() => setActiveItem(null)}
                 >
                   <motion.a
-                    href={`/${item.key}`}
+                    href={`${item.key}`}
                     className={`relative px-4 py-2 whitespace-nowrap text-sm font-medium rounded-lg transition-all
                       ${
                         activeItem === item.key
@@ -177,7 +177,7 @@ export const NavBarMain = () => {
                     className="relative py-[2px] border-b border-light-primary/10 dark:border-dark-primary/10 last:border-0"
                   >
                     <motion.a
-                      href={`/${item.key}`}
+                      href={`${item.key}`}
                       className={`block px-4 py-3 text-md font-medium rounded-lg transition-all
                         ${
                           activeItem === item.key

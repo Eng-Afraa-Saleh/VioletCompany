@@ -33,17 +33,7 @@
           "country": "Saudi Arabia",
           "phones": ["+966 11 234 5678", "+966 50 987 6543"],
           "address": "Riyadh, Al Olaya"
-        },
-        {
-          "country": "United Arab Emirates",
-          "phones": ["+971 4 123 4567", "+971 50 433 9421"],
-          "address": "Dubai Marina, Dubai"
-        },
-        {
-          "country": "Egypt",
-          "phones": ["+20 2 3456 7890"],
-          "address": "Cairo, Fifth Settlement"
-        }
+        } 
       ]
     },
     "copyright": "© 2024 FutureTech Solutions. All rights reserved.",
