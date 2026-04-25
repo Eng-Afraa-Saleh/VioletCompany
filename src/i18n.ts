@@ -11,6 +11,8 @@ import enBrand from './locales/en/brand.json';
 import arBrand from './locales/ar/brand.json';
 import enfooter from './locales/en/footer.json';
 import arfooter from './locales/ar/footer.json';
+import enContact from './locales/en/contact.json';
+import arContact from './locales/ar/contact.json';
 i18n.use(initReactI18next).init({
   fallbackLng: 'en',
   resources: {
@@ -19,6 +21,7 @@ i18n.use(initReactI18next).init({
       about: enAbout,
       services: enServices,
       brand: enBrand,
+      contact:enContact,
       footer:enfooter
 
 
@@ -29,6 +32,7 @@ i18n.use(initReactI18next).init({
       about: arAbout,
       services: arServices,
       brand: arBrand,
+       contact:arContact,
       footer:arfooter
 
 
@@ -37,9 +41,9 @@ i18n.use(initReactI18next).init({
   interpolation: {
     escapeValue: false
   },
-  ns: ['common', 'about', 'services', 'brand', 'footer'], // أضف brand إلى namespaces
+  ns: ['common', 'about', 'services', 'brand', 'footer'],  
 
-  defaultNS: 'common' // namespace افتراضي
+  defaultNS: 'common'  
 });
 
 export default i18n;

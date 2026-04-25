@@ -1,0 +1,42 @@
+{
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "We'd love to hear from you! Reach out to us through any of these channels.",
+    "phone": {
+      "title": "Phone",
+      "description": "Call us directly:",
+      "number": "+966 11 234 5678",
+      "hours": "Mon-Fri, 9AM - 6PM"
+    },
+    "email": {
+      "title": "Email",
+      "description": "Send us an email:",
+      "address": "WWW.violetsystem.com",
+      "response": "We'll respond within 24 hours"
+    },
+    "form": {
+      "title": "Send us a Message",
+      "name": {
+        "label": "Name",
+        "placeholder": "Your full name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "you@example.com"
+      },
+      "subject": {
+        "label": "Subject",
+        "placeholder": "What is this regarding?"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Your message here..."
+      },
+      "button": "Send Message"
+    },
+    "location": {
+      "title": "Visit Us",
+      "address": "123 Business Street, Suite 100, City, State 12345"
+    }
+  }
+}

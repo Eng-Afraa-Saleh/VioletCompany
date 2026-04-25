@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 
 const NotFound = () => {
-    
+
     return (
         <div className="bg-light-background dark:bg-dark-background py-20 w-full flex items-center justify-center px-4"
             style={{
@@ -40,7 +41,7 @@ const NotFound = () => {
                     <p className="mt-3 md:mt-4 text-light-text/70 dark:text-dark-text/70 md:text-lg leading-[150%] max-w-2xl">
                         The page you are looking for does not exist or has been moved.          </p>
 
-                     <div
+                    <div
                         className="mt-5 h-[2px] w-24 md:w-32"
                         style={{
                             background:
@@ -49,18 +50,18 @@ const NotFound = () => {
                         }}
                     />
 
-                     <div className="mt-8 md:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-                        <button  
+                    <div className="mt-8 md:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+                        <Link to={"/home"}
                             className="px-6 py-3 rounded-lg bg-light-card dark:bg-dark-card border border-light-primary/20 dark:border-dark-primary/20 text-light-text dark:text-dark-text hover:bg-light-primary/10 dark:hover:bg-dark-primary/10 transition-all duration-300 shadow-sm hover:shadow-md"
                         >
                             Back To Home
 
-                        </button>
-                        <button
+                        </Link>
+                        <Link to={"/contact"}
                             className="px-6 py-3 rounded-lg bg-gradient-to-r from-light-primary to-light-accent dark:from-dark-primary dark:to-dark-accent text-white font-medium  transition-all duration-300 shadow-md hover:shadow-xl"
                         >
                             Contact Us
-                        </button>
+                        </Link>
                     </div>
 
 

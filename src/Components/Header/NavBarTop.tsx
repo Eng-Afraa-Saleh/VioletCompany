@@ -26,18 +26,15 @@ export const NavbarTop = () => {
       transition={{ type: 'spring', stiffness: 100 }}
     >
       <div className="container mx-auto px-4 flex flex-col justify-center items-center">
-        {/* النص والأيقونة في مجموعة واحدة */}
-        <div className={`flex items-center ${i18n.language === 'ar' ? 'flex-row-reverse' : 'flex-row'}`}>
-          {/* النص */}
-          <motion.span 
+         <div className={`flex items-center ${i18n.language === 'ar' ? 'flex-row-reverse' : 'flex-row'}`}>
+           <motion.span 
             className="text-sm font-medium text-light-text dark:text-dark-text"
             whileHover={{ scale: 1.05 }}
           >
             {t('navbar.slogan')}
           </motion.span>
           
-          {/* أيقونة السهم مع رابط للاتصال */}
-          <Link to="/contact" className= 'ml-2'>
+           <Link to="/contact" className= 'ml-2'>
             <motion.div
               className="p-1 rounded-full bg-light-primary/10 dark:bg-dark-primary/10 text-light-primary dark:text-dark-primary"
               whileHover={{ scale: 1.2 }}

@@ -3,8 +3,7 @@ import { motion } from 'framer-motion';
 import { FiCheckCircle } from 'react-icons/fi';
 import BrandSlider from './BrandSlider';
 
-// استيراد الصور مباشرة
-import brandLogo from '/assets/images/Brand/brandLogo.png';
+ import brandLogo from '/assets/images/Brand/brandLogo.png';
  
 interface BrandData {
   title: string;
@@ -49,10 +48,9 @@ const BrandPage = () => {
     }
   };
 
-  // استبدال الصور في الـ sections
-  const sectionsWithImages = brandData.sections.map((section) => ({
+   const sectionsWithImages = brandData.sections.map((section) => ({
     ...section,
-    image: brandLogo // استخدام الصورة المستوردة
+    image: brandLogo  
   }));
 
   return (

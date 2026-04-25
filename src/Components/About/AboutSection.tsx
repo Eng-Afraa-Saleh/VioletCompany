@@ -60,12 +60,11 @@ export const AboutSection = () => {
             </div>
           </motion.div>
 
-          {/* الميزات */}
-          <motion.div 
+           <motion.div 
             className="lg:w-1/2"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false }} // تغيير once إلى false
+            viewport={{ once: false }}  
             variants={{
               visible: { transition: { staggerChildren: 0.2 } }
             }}
@@ -85,11 +84,10 @@ export const AboutSection = () => {
           </motion.div>
         </div>
 
-        {/* تأثير بصري */}
-        <motion.div
+         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: false }} // تغيير once إلى false
+          viewport={{ once: false }}  
           className="mt-20 flex justify-center"
         >
         </motion.div>

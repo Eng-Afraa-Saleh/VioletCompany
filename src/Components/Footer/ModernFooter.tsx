@@ -1,19 +1,19 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { 
-   
+import {
+
   FaInstagram,
   FaPhone,
   FaEnvelope,
   FaMapMarkerAlt,
   FaGlobe,
   FaTwitter,
-  FaFacebook
+  FaLinkedin,
 } from 'react-icons/fa';
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import type { JSX } from 'react';
- 
+
 interface FooterLink {
   title: string;
   url: string;
@@ -68,19 +68,19 @@ const ModernFooter = () => {
     }
   }, []);
 
-   const scrollToTop = () => {
+  const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
     });
   };
 
-   const isCurrentPage = (url: string) => {
+  const isCurrentPage = (url: string) => {
     return location.pathname === url;
   };
 
   const socialIcons: Record<string, JSX.Element> = {
-    FaFacebook: <FaFacebook />,
+    FaLinkedin: <FaLinkedin />,
     FaInstagram: <FaInstagram />,
     FaTwitter: <FaTwitter />
   };
@@ -111,14 +111,14 @@ const ModernFooter = () => {
             <p className={`${darkMode ? 'text-dark-text/80' : 'text-light-text/80'}`}>
               {footerData.company_info.description}
             </p>
-            
+
             <div className="space-y-4">
               <div className="flex items-start gap-3">
                 <FaGlobe className={`mt-1 ${darkMode ? 'text-dark-primary' : 'text-light-primary'}`} />
-                <a 
-                  href="http://www.violetsystem.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="http://www.violetsystem.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={`${darkMode ? 'text-dark-text/80 hover:text-dark-primary' : 'text-light-text/80 hover:text-light-primary'} transition-colors flex items-center gap-2`}
                 >
                   <span className="w-2 h-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 animate-pulse"></span>
@@ -127,8 +127,8 @@ const ModernFooter = () => {
               </div>
               <div className="flex items-center gap-3">
                 <FaEnvelope className={`${darkMode ? 'text-dark-primary' : 'text-light-primary'}`} />
-                <a 
-                  href="mailto:Info@violetcompany.net" 
+                <a
+                  href="mailto:Info@violetcompany.net"
                   className={`${darkMode ? 'text-dark-text/80 hover:text-dark-primary' : 'text-light-text/80 hover:text-light-primary'} transition-colors flex items-center gap-2`}
                 >
                   <span className="w-2 h-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 animate-pulse"></span>
@@ -165,7 +165,7 @@ const ModernFooter = () => {
                       {link.title}
                     </button>
                   ) : (
-                    <Link 
+                    <Link
                       to={link.url}
                       onClick={scrollToTop}
                       className={`${darkMode ? 'text-dark-text/80 hover:text-dark-primary' : 'text-light-text/80 hover:text-light-primary'} transition-colors flex items-center gap-2 group`}
@@ -206,7 +206,7 @@ const ModernFooter = () => {
                       {link.title}
                     </button>
                   ) : (
-                    <Link 
+                    <Link
                       to={link.url}
                       onClick={scrollToTop}
                       className={`${darkMode ? 'text-dark-text/80 hover:text-dark-primary' : 'text-light-text/80 hover:text-light-primary'} transition-colors flex items-center gap-2 group`}
@@ -231,7 +231,7 @@ const ModernFooter = () => {
             <h3 className={`text-xl font-bold ${darkMode ? 'text-dark-primary' : 'text-light-primary'}`}>
               {footerData.contact.title}
             </h3>
-            
+
             {footerData.contact.offices?.map((office, index) => (
               <div key={index} className="mb-6">
                 <h4 className={`text-lg font-semibold mb-3 ${darkMode ? 'text-dark-primary' : 'text-light-primary'} bg-gradient-to-r from-blue-500/10 to-purple-500/10 p-2 rounded-lg`}>
@@ -241,8 +241,8 @@ const ModernFooter = () => {
                   {office.phones.map((phone, phoneIndex) => (
                     <div key={phoneIndex} className="flex items-center gap-3">
                       <FaPhone className={`${darkMode ? 'text-dark-primary' : 'text-light-primary'} text-sm`} />
-                      <a 
-                        href={`tel:${phone}`} 
+                      <a
+                        href={`tel:${phone}`}
                         className={`${darkMode ? 'text-dark-text/80 hover:text-dark-primary' : 'text-light-text/80 hover:text-light-primary'} transition-colors text-sm flex items-center gap-2`}
                       >
                         <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-blue-500 to-purple-500"></span>

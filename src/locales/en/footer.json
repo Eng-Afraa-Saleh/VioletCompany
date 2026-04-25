@@ -10,7 +10,7 @@
     "quick_links": {
       "title": "Quick Links",
       "links": [
-        { "title": "Home", "url": "/" },
+        { "title": "Home", "url": "/home" },
         { "title": "About Us", "url": "/about" },
         { "title": "Services", "url": "/services" },
         { "title": "Contact Us", "url": "/contact" }
@@ -32,7 +32,7 @@
         {
           "country": "Saudi Arabia",
           "phones": ["+966 11 234 5678", "+966 50 987 6543"],
-          "address": "Riyadh, Al Olaya"
+          "address": "Riyadh"
         } 
       ]
     },

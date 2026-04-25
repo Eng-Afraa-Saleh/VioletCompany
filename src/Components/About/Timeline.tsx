@@ -31,8 +31,7 @@ const Timeline = () => {
     { damping: 20, stiffness: 100 }
   );
 
-  // تأثيرات الحركة لكل عنصر
-  const fadeIn = {
+   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
     visible: { 
       opacity: 1, 
@@ -41,8 +40,7 @@ const Timeline = () => {
     }
   };
 
-  // تفعيل الحركات بناءً على تقدم السكرول
-  useEffect(() => {
+   useEffect(() => {
     const handleScroll = () => {
       if (scrollYProgress.get() > 0.1) {
         controls.start("visible");

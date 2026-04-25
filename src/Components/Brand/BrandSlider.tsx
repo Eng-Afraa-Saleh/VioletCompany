@@ -2,8 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
-// استيراد الصور مباشرة
-import form1 from '/assets/images/Brand/form1.png';
+ import form1 from '/assets/images/Brand/form1.png';
 import form2 from '/assets/images/Brand/form2.png';
 import form3 from '/assets/images/Brand/form3.png';
 import form4 from '/assets/images/Brand/form4.png';
@@ -20,14 +19,11 @@ const BrandSlider = () => {
   const { t, i18n } = useTranslation('brand');
   const isRTL = i18n.language === 'ar';
 
-  // مصفوفة الصور المستوردة
-  const importedImages = [form1, form2, form3, form4, form5];
+   const importedImages = [form1, form2, form3, form4, form5];
   
-  // الحصول على بيانات السلايدر من الترجمة
-  const brandData = t('brandslider.cards', { returnObjects: true }) as SlideData[];
+   const brandData = t('brandslider.cards', { returnObjects: true }) as SlideData[];
   
-  // دمج الصور المستوردة مع البيانات
-  const slidesWithImages = brandData.map((slide, index) => ({
+   const slidesWithImages = brandData.map((slide, index) => ({
     ...slide,
     image: importedImages[index] || slide.image
   }));

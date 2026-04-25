@@ -16,8 +16,7 @@
 body{
   overflow-x: hidden;
 }
-/* إصلاحات أساسية للاتجاه */
-[dir="rtl"] .rtl-mirror {
+ [dir="rtl"] .rtl-mirror {
   transform: scaleX(-1);
     font-family: 'Tajawal', sans-serif;
 
@@ -28,8 +27,7 @@ body{
   white-space: nowrap;
 }
 
-/* تأمين المسافات بين العناصر */
-.nav-item {
+ .nav-item {
   min-width: max-content;
 }
 

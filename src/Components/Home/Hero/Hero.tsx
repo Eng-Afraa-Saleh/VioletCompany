@@ -51,7 +51,7 @@ export const Hero = () => {
           variants={containerVariants}
         >
           <motion.h1 
-            className={`text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight font-primary
+            className={`text-3xl md:text-4xl lg:text-5xl font-bold my-10 leading-tight font-primary
               bg-gradient-to-r from-light-primary via-light-accent to-light-highlight 
               dark:from-dark-primary dark:via-dark-accent dark:to-dark-highlight
               bg-clip-text text-transparent animated-gradient-text ${isRTL ? 'text-right pb-16' : 'text-left'}`}
@@ -67,8 +67,7 @@ export const Hero = () => {
             {t('hero.description')}
           </motion.p>
 
-          {/* البطاقات الإحصائية */}
-          <motion.div 
+           <motion.div 
             className={`grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8 ${isRTL ? 'text-right' : 'text-left'}`}
             variants={fadeIn}
           >
@@ -90,8 +89,7 @@ export const Hero = () => {
             ))}
           </motion.div>
 
-          {/* زر الاتصال */}
-          <motion.div
+           <motion.div
             variants={fadeIn}
             className={`flex ${isRTL ? 'justify-end' : 'justify-start'}`}
           >
@@ -109,8 +107,7 @@ export const Hero = () => {
           </motion.div>
         </motion.div>
         
-        {/* القسم الجانبي - السلايدر */}
-        <motion.div 
+         <motion.div 
           className="md:w-1/2 w-full h-[350px] md:h-[500px]"
           initial="hidden"
           animate="visible"
