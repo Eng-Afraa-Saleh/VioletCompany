@@ -53,27 +53,27 @@ src/
 ├── Types/           # Global TypeScript Definitions
 ├── App.tsx          # Root Application Component
 └── main.tsx         # Entry Point
-
-🚀 Getting Started
+```
+## 🚀 Getting Started
 Prerequisites
 Make sure you have Node.js (v16+ recommended) installed on your machine.
 
-Installation
+## Installation
 Clone the repository:
 git clone git@github.com:Eng-Afraa-Saleh/VioletCompany.git
 
-Navigate into the directory:
+## Navigate into the directory:
 cd violet-company
 
-Install dependencies:
+## Install dependencies:
 npm install
 
-Start the development server:
+## Start the development server:
 npm run dev
 
-🌐 Deployment (GitHub Pages)
+## 🌐 Deployment (GitHub Pages)
 This project is configured for seamless deployment using GitHub Pages.
 
-To trigger a deployment manually (if you are using a tool like gh-pages):
+## To trigger a deployment manually (if you are using a tool like gh-pages):
 npm run build
 npm run deploy
